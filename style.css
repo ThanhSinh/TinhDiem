@@ -1,0 +1,47 @@
+h2 {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 9999;
+    background-color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+.container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 60px; /* Thêm margin-top để tránh chạm vào tiêu đề */
+}
+label[for="playerName"] {
+    margin-top: 30px; /* Đảm bảo khoảng cách giữa nhãn và tiêu đề */
+    display: block; /* Đảm bảo dòng mới cho nhãn */
+}
+.form-container {
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    transition: margin-top 0.3s ease; /* Thêm transition cho hiệu ứng mượt */
+}
+.form-container:not(:first-child) {
+    margin-top: 20px; /* Thêm margin-top cho các form ngoại trừ form đầu tiên */
+}
+.fixed-form {
+    position: fixed;
+    top: 60px; /* Cố định form đầu tiên ở vị trí này */
+    z-index: 999;
+    background-color: #fff;
+    width: calc(100% - 40px); /* Chiều rộng bằng container */
+    left: 20px;
+}
